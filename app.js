@@ -30,6 +30,9 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+/*Register a new route to '/grid/ that routes to a new
+controller in index.js called index.viewGrid*/
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
